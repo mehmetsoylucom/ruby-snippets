@@ -5,6 +5,7 @@ module Menu
       This menu will help you use the Task List System
       1) Add
       2) Show 
+      3) Update
       4) Delete
       5) Write a file
       6) Read from a file
@@ -42,6 +43,10 @@ class List
   
   def delete(task_number)
     all_tasks.delete_at(task_number - 1)
+  end
+  
+  def update(task_number, task)
+    all_tasks[task_number - 1]  = task
   end
   
   def write_to_file(filename)
@@ -85,6 +90,9 @@ if __FILE__ == $PROGRAM_NAME
     when '2'
       puts my_list.show
       
+    when '3'
+      puts my_list.show 
+      my_list.update(prompt('Task number for update').to_i, prompt('New content for task'))
     when '4'
       puts my_list.show
       my_list.delete(prompt('Task number for delete').to_i)
