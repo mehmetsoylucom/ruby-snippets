@@ -24,6 +24,15 @@ puts merhabaIki   # Sonuç : Return Ornek
 
 undef merhaba
 
+# True or False with ? 
+
+a = "ali"
+b = "ali"
+
+a.eql? b  # => true
+a.eql?(b) # => true
+
+
 # Arguments
 
 def merhaba(isim)
@@ -34,3 +43,16 @@ def merhaba isim
   "Merhaba #{isim}"
 end
 
+def merhaba(isim="insalık!")
+  "Merhaba #{isim}"
+end
+
+def merhaba(*isimler)
+  "Merhaba #{isimler.join(" ve ")}"
+end
+
+def custom_numbers(first, second, *others)
+  puts "ilk sayı: #{first}"
+  puts "ikinci sayı : #{second}"
+  puts "diğer sayılar : #{others.join(",")}"
+end
