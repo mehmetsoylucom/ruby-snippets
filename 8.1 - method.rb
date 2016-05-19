@@ -23,3 +23,14 @@ puts merhabaIki   # Sonuç : Return Ornek
 # Kill def
 
 undef merhaba
+
+# Arguments
+
+def merhaba(isim)
+  "Merhaba #{isim}"
+end
+
+def merhaba isim
+  "Merhaba #{isim}"
+end
+
