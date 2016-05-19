@@ -24,15 +24,6 @@ puts merhabaIki   # Sonuç : Return Ornek
 
 undef merhaba
 
-# True or False with ? 
-
-a = "ali"
-b = "ali"
-
-a.eql? b  # => true
-a.eql?(b) # => true
-
-
 # Arguments
 
 def merhaba(isim)
