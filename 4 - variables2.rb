@@ -11,9 +11,3 @@ puts z # 88
 # Ruby predefined global variables
 
 puts global_variables
-
-class Theclass
-    def index
-        self.index
-    end
-end
