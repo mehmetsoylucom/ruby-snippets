@@ -21,7 +21,7 @@ input = gets.chomp
 
 # Manipulate vars in quote 
 
-variableInVariable = "Manupulated variable in quotes (#{__LINE__}) :\n#{variableNumericName*2} #{variableStringName} "
+variableInVariable = "Manupulated variable in quotes (#{__LINE__}):\n#{variableNumericName*2} #{variableStringName} "
 puts variableInVariable
 
 input = gets.chomp
@@ -36,7 +36,8 @@ input = gets.chomp
 
 def say_hi
     localVariable = "I am the localVariable of say_hi"
-    puts "Global variable concated in def :\nMerhaba #{$globalVariable} ( from say_hi output )\n\n"
+    puts "Global variable concated in def (#{__LINE__}):\nMerhaba #{$globalVariable} ( from say_hi output )\n\n"
+    input = gets.chomp
     puts "Local variable value (#{__LINE__}):\n#{localVariable}"
 end
 
@@ -50,18 +51,18 @@ input = gets.chomp
 
 MyConstant = 10
 
-puts "MyConstant value is :\n#{MyConstant}" 
+puts "MyConstant value is (#{__LINE__}):\n#{MyConstant}" 
 
 input = gets.chomp
 
 # Check the variable type before put or print 
 
-puts "Variable type for constant : ", defined?(MyConstant) # contant
+puts "Variable type for constant (#{__LINE__}): ", defined?(MyConstant) # contant
 
 input = gets.chomp
 
-puts "Variable type for local variable : ", defined?(variableStringName) # local-variable
+puts "Variable type for local variable (#{__LINE__}): ", defined?(variableStringName) # local-variable
 
 input = gets.chomp
 
-puts "Variable type for method : ", defined?(say_hi) # method
+puts "Variable type for method (#{__LINE__}): ", defined?(say_hi) # method
