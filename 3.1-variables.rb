@@ -1,17 +1,30 @@
-# Variables 1
+# Numeric variable
 
 variableNumericName = 5
-puts variableNumericName
+puts "numeric variable : " ,  variableNumericName
+
+input = gets.chomp
+
+# String variable
 
 variableStringName = "Adet"
-puts variableStringName
+puts "string variable : " , variableStringName
+
+input = gets.chomp
+
+# Concat variables
 
 variableInVariable = "#{variableNumericName} #{variableStringName} "
-puts variableInVariable
+puts "Concat variables : ",  variableInVariable
+
+input = gets.chomp
+
+# Manipulate vars in quote 
 
 variableInVariable = "#{variableNumericName*2} #{variableStringName} "
 puts variableInVariable
 
+input = gets.chomp
 
 # Global & local variable
 
@@ -26,15 +39,21 @@ end
 
 say_hi
 
+input = gets.chomp
 
-# CONSTANTS
+# Constants
 
 MyConstant = 10
 
 puts "MyConstant value is : #{MyConstant}" 
 
+
+input = gets.chomp
+
 # Check the variable type before put or print 
 
-puts defined?(MyConstant) # contant
-puts defined?(variableStringName) # local-variable
-puts defined?(say_hi) # method
+puts "Variable type for constant : ", defined?(MyConstant) # contant
+
+puts "Variable type for local variable : ", defined?(variableStringName) # local-variable
+
+puts "Variable type for method : ", defined?(say_hi) # method
