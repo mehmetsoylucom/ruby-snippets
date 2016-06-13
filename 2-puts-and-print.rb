@@ -1,7 +1,9 @@
 # Puts and print
 
-print "Put Hello world!" # Satir sonu alt satira gecmez
+print "Print Hello world!" # Satir sonu alt satira gecmez
 
-puts "Put Hello world!" # Sonraki satira gecer
+puts "Puts Hello world!" # Sonraki satira gecer
 
-p 'Short write command'
+p 'Short form for puts'
+
+p '...last line...'
