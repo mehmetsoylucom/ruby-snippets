@@ -19,6 +19,8 @@ input = gets.chomp
 puts "Value of Z :"
 puts z # 88
 
+input = gets.chomp
+
 # Ruby predefined global variables
 
 puts global_variables
