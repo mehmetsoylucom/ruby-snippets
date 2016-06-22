@@ -13,9 +13,10 @@ end
 
 def merhabaIki
   m = "Merhaba"
-  return "Return Ornek" # to return
-  n = "Ornek"
+  return "Return Ornek #{m}", m # to return
+  $n = "Ornek"
 end
+puts $n
 
 puts merhabaBir   # Sonuç : Ornek
 puts merhabaIki   # Sonuç : Return Ornek
@@ -41,6 +42,8 @@ end
 def merhaba(*isimler)
   "Merhaba #{isimler.join(" ve ")}"
 end
+
+puts merhaba("a","b","c","d")
 
 def custom_numbers(first, second, *others)
   puts "ilk sayı: #{first}"
